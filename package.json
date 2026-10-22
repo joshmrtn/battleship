@@ -1,0 +1,54 @@
+{
+  "version": "0.0.1",
+  "description": "A template repository of a basic HTML/CSS/JS web app.",
+  "name": "vanilla-web-template",
+  "homepage": "https://github.com/joshmrtn/vanilla-web-template#readme",
+  "bugs": {
+    "url": "https://github.com/joshmrtn/vanilla-web-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshmrtn/vanilla-web-template.git"
+  },
+  "license": "MIT",
+  "author": "Josh Martin",
+  "type": "module",
+  "scripts": {
+    "build": "webpack --mode=production --config-node-env=production",
+    "build:dev": "webpack --mode=development",
+    "serve": "webpack serve",
+    "watch": "webpack --watch",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "validate": "npm run lint && npm run format && npm run test",
+    "deploy": "node deploy.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@eslint/css": "^2.0.1",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.1.1",
+    "@eslint/markdown": "^7.5.1",
+    "babel-jest": "^30.5.2",
+    "babel-loader": "^10.1.1",
+    "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "husky": "^9.1.7",
+    "jest": "^30.5.2",
+    "lint-staged": "^17.6.0",
+    "prettier": "3.9.10",
+    "webpack": "^5.112.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
