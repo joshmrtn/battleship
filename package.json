@@ -1,14 +1,14 @@
 {
   "version": "0.0.1",
-  "description": "A template repository of a basic HTML/CSS/JS web app.",
-  "name": "vanilla-web-template",
-  "homepage": "https://github.com/joshmrtn/vanilla-web-template#readme",
+  "description": "The classic Battleship board game",
+  "name": "battleship",
+  "homepage": "https://github.com/joshmrtn/battleship#readme",
   "bugs": {
-    "url": "https://github.com/joshmrtn/vanilla-web-template/issues"
+    "url": "https://github.com/joshmrtn/battleship/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshmrtn/vanilla-web-template.git"
+    "url": "git+https://github.com/joshmrtn/battleship.git"
   },
   "license": "MIT",
   "author": "Josh Martin",
