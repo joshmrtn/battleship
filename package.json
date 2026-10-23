@@ -13,6 +13,11 @@
   "license": "MIT",
   "author": "Josh Martin",
   "type": "module",
+  "imports": {
+    "#models/*": "./src/models/*",
+    "#views": "./src/views/*",
+    "#controllers": "./src/controllers/*"
+  },
   "scripts": {
     "build": "webpack --mode=production --config-node-env=production",
     "build:dev": "webpack --mode=development",

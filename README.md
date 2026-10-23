@@ -19,9 +19,9 @@ npm run serve
 This is a rough sketch of the development roadmap/goals. The "Core" and "Extra" goals come directly from the project assignment; "Stretch" includes my own thoughts of how I could enhance the game further.
 
 - [ ] Core
-  - [ ] Create `Ship` class
-    - [ ] Implement `hit()` method
-    - [ ] Implement `isSunk()` method
+  - [x] Create `Ship` class
+    - [x] Implement `hit()` method
+    - [x] Implement `isSunk()` method
   - [ ] Create `Gameboard` class
     - [ ] Implement `receiveAttack()` method
   - [ ] Create `Player` class
