@@ -6,6 +6,12 @@ import { Cardinal } from "./Cardinal";
  */
 export class Ship {
   /**
+   * The unique ID of the ship.
+   * @type {string}
+   */
+  #id;
+
+  /**
    * The name of the ship or ship class.
    * @type {string}
    */
@@ -48,6 +54,7 @@ export class Ship {
    * @param {Cardinal} dir - Which way the ship is pointing.
    */
   constructor(name, length, pos, dir) {
+    this.#id = crypto.randomUUID();
     this.#name = name;
     this.#length = length;
     this.#pos = pos;
@@ -76,6 +83,10 @@ export class Ship {
     return result;
   }
 
+  /** @type {string} */
+  get id() {
+    return this.#id;
+  }
   /** @type {string} */
   get name() {
     return this.#name;
@@ -109,6 +120,17 @@ export class Ship {
       result.push(newPoint);
     }
     return result;
+  }
+
+  /**
+   * Returns true if the ship occupies the cell.
+   * @param {Point} cell
+   */
+  occupies(cell) {
+    for (let shipCell of this.#cells) {
+      if (shipCell.isEqual(cell)) return true;
+    }
+    return false;
   }
 
   /**

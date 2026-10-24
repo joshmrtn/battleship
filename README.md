@@ -22,8 +22,8 @@ This is a rough sketch of the development roadmap/goals. The "Core" and "Extra" 
   - [x] Create `Ship` class
     - [x] Implement `hit()` method
     - [x] Implement `isSunk()` method
-  - [ ] Create `Gameboard` class
-    - [ ] Implement `receiveAttack()` method
+  - [x] Create `Gameboard` class
+    - [x] Implement `receiveAttack()` method
   - [ ] Create `Player` class
   - [ ] Create user interface
   - [ ] Implement game loop against computer player
